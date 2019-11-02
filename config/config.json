@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "fratagonia",
-    "password": "password123!",
+    "password": "Password123!",
     "database": "exampledb",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "fratagonia",
-    "password": "password123!",
+    "password": "Password123!",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
