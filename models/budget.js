@@ -2,7 +2,6 @@ module.exports = function(sequelize, DataTypes) {
 
   var Budget = sequelize.define("Budget", {
     income: DataTypes.FLOAT,
-    category: DataTypes.TEXT,
     food: DataTypes.FLOAT,
     rent: DataTypes.FLOAT,
     transportation: DataTypes.FLOAT,
