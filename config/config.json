@@ -1,14 +1,14 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "exampledb",
-    "host": "localhost",
+    "username": "pb83h2ztj08b9job",
+    "password": "puez7z32xxiu02aj",
+    "database": "nn9kio83t0d7w4yd",
+    "host": "thh2lzgakldp794r.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
+    "username": "fratagonia",
+    "password": "Password123!",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
