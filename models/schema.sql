@@ -1,5 +1,7 @@
 CREATE DATABASE coindb;
 
+DROP DATABASE IF EXISTS coindb;
+
 USE coindb;
 
 CREATE TABLE coins (
