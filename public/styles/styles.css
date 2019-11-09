@@ -1,3 +1,15 @@
-.list-group-item {
-  line-height: 2.5;
+.navbar {
+  background-color: rgb(71, 106, 138);
+
 }
+
+.navbar-brand {
+  color: white;
+}
+
+.nav-link {
+  color: white;
+
+}
+
+
