@@ -36,7 +36,7 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   Accounts.associate = function(models) {
-    Accounts.hasMany(models.Budget, {
+    Accounts.hasMany(models.Budgets, {
       onDelete: "cascade"
     });
   };
