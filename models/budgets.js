@@ -1,5 +1,4 @@
 module.exports = function(sequelize, DataTypes) {
-
   var Budgets = sequelize.define("Budget", {
     id: {
       type: DataTypes.INTEGER,
@@ -7,7 +6,7 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true
     },
     amount: {
-      type: DataTypes.DECIMAL(10,2)
+      type: DataTypes.DECIMAL(10, 2)
     },
     createdOn: {
       type: DataTypes.DATE
@@ -15,8 +14,7 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   Budgets.associate = function(models) {
-
-    Budgets.belongsTo(models.Accounts, {
+    Budgets.belongsToMany(models.Accounts, {
       foreignKey: {
         allowNull: false
       }
@@ -30,4 +28,4 @@ module.exports = function(sequelize, DataTypes) {
   };
 
   return Budgets;
-}
+};
