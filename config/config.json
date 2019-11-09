@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "pb83h2ztj08b9job",
-    "password": "puez7z32xxiu02aj",
-    "database": "nn9kio83t0d7w4yd",
-    "host": "thh2lzgakldp794r.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "coinUser",
+    "password": "Joon912!!",
+    "database": "coin_db",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {

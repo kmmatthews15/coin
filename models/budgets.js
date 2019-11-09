@@ -20,10 +20,8 @@ module.exports = function(sequelize, DataTypes) {
       }
     });
 
-    Budgets.belongsTo(models.Categories, {
-      foreignKey: {
-        allowNull: false
-      }
+    Budgets.hasMany(models.Categories, {
+      onDelete: "cascade"
     });
   };
 

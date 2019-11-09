@@ -14,8 +14,10 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   Categories.associate = function(models) {
-    Categories.hasMany(models.Budgets, {
-      onDelete: "cascade"
+    Categories.belongsTo(models.Budgets, {
+      foreignKey: {
+        allowNull: false
+      }
     });
   };
 
