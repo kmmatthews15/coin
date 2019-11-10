@@ -35,6 +35,18 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
+  Accounts.prototype.validPassword = function(password) {
+    return bcrypt.compareSync(password, this.password);
+  };
+
+  Accounts.addHook("beforeCreate", function(Accounts) {
+    Accounts.password = bcrypt.hashSync(
+      Accounts.password,
+      bcrypt.genSaltSync(10),
+      null
+    );
+  });
+
   Accounts.associate = function(models) {
     Accounts.hasMany(models.Budgets, {
       onDelete: "cascade"

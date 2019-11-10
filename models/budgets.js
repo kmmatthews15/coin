@@ -1,27 +1,26 @@
 module.exports = function(sequelize, DataTypes) {
-  var Budgets = sequelize.define("Budget", {
-    id: {
+  var Budgets = sequelize.define("Budgets", {
+    budgetId: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
       primaryKey: true
     },
+    category: {
+      type: DataTypes.STRING
+    },
     amount: {
       type: DataTypes.DECIMAL(10, 2)
     },
-    createdOn: {
-      type: DataTypes.DATE
+    isActual: {
+      type: DataTypes.BOOLEAN
     }
   });
 
   Budgets.associate = function(models) {
-    Budgets.belongsToMany(models.Accounts, {
+    Budgets.belongsTo(models.Accounts, {
       foreignKey: {
         allowNull: false
       }
-    });
-
-    Budgets.hasMany(models.Categories, {
-      onDelete: "cascade"
     });
   };
 
