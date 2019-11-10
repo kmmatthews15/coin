@@ -13,13 +13,5 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
-  Categories.associate = function(models) {
-    Categories.belongsTo(models.Budgets, {
-      foreignKey: {
-        allowNull: false
-      }
-    });
-  };
-
   return Categories;
 };
