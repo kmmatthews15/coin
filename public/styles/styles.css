@@ -1,5 +1,5 @@
 .navbar {
-  background-image: url(./images/.jpg);
+  background-color: rgb(19, 19, 82);;
 
   }
 
@@ -25,7 +25,8 @@
   width: 80%;
   margin-top: 5%;
   margin-left: 10%;
-  opacity: 0.8;
+  opacity: 0.9;
+  box-shadow: 10px 10px 5px black;
 }
 
 body {
@@ -35,9 +36,11 @@ body {
 }
 
 #footer {
-  padding: 4% 15%;
+  padding: 1% 15%;
   text-align: center;
   background-image: url(./images/.jpg);
   color: white;
-  background-color: darkslategray;
+  background-color:rgb(19, 19, 82);
 }
+
+
