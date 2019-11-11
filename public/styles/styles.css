@@ -1,5 +1,5 @@
 .navbar {
-  background-image: url(./images/cloud.jpg);
+  background-image: url(./images/.jpg);
 
   }
 
@@ -22,12 +22,14 @@
 
 .jumbotron {
   background-color: white;
-  background-image: url(./images/smartstuff.jpg);
-
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+  opacity: 0.8;
 }
 
 body {
-  background-image: url(./images/cloud.jpg);
+  background-image: url(./images/please.jpg);
 
 
 }
@@ -35,6 +37,7 @@ body {
 #footer {
   padding: 4% 15%;
   text-align: center;
-  background-image: url(./images/coins.jpg);
-  color: black;
+  background-image: url(./images/.jpg);
+  color: white;
+  background-color: darkslategray;
 }
