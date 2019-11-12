@@ -1,15 +1,46 @@
 .navbar {
-  background-color: rgb(71, 106, 138);
+  background-color: rgb(19, 19, 82);;
 
-}
+  }
 
 .navbar-brand {
   color: white;
+
 }
 
 .nav-link {
   color: white;
 
+}
+
+.container {
+  background-color: white;
+  opacity: 0.8;
+
+}
+
+
+.jumbotron {
+  background-color: white;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+  opacity: 0.9;
+  box-shadow: 10px 10px 5px black;
+}
+
+body {
+  background-image: url(./images/please.jpg);
+
+
+}
+
+#footer {
+  padding: 1% 15%;
+  text-align: center;
+  background-image: url(./images/.jpg);
+  color: white;
+  background-color:rgb(19, 19, 82);
 }
 
 
