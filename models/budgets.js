@@ -6,13 +6,16 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true
     },
     category: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      allowNull: false
     },
     amount: {
-      type: DataTypes.DECIMAL(10, 2)
+      type: DataTypes.DECIMAL(10, 2),
+      allowNull: false
     },
     isActual: {
-      type: DataTypes.BOOLEAN
+      type: DataTypes.BOOLEAN,
+      allowNull: false
     }
   });
 
