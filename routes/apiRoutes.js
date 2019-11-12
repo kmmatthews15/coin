@@ -2,25 +2,25 @@ var db = require("../models");
 
 module.exports = function(app) {
   // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+  app.get("/api/budgets", function(req, res) {
+    db.Budgets.findAll({}).then(function(dbBudgets) {
+      res.json(dbBudgets);
     });
   });
 
   // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  app.post("/api/budgets", function(req, res) {
+    db.Budgets.create(req.body).then(function(dbBudgets) {
+      res.json(dbBudgets);
     });
   });
 
   // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(
-      dbExample
+  app.delete("/api/Budgets/:id", function(req, res) {
+    db.Budgets.destroy({ where: { id: req.params.id } }).then(function(
+      dbBudgets
     ) {
-      res.json(dbExample);
+      res.json(dbBudgets);
     });
   });
 };
