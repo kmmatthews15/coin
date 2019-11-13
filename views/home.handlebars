@@ -1,23 +1,211 @@
-<body>
-  <nav class="navbar navbar-expand-lg navbar">
-    <h1>coin</h1>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
+<nav class="navbar navbar-expand-lg navbar">
+  <h1>coin</h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
 
-  <div class="container" id="budgets">
-    <div id="graphs">
-
-    </div>
-    <div id="expenses">
-
+<div class="container" id="budgets">
+  <div id="graphs">
+    <canvas id="myChart"></canvas>
+  </div>
+  <div id="expenses">
+    <div class="form-control">
+      <input type="text">
     </div>
   </div>
+</div>
 
-  <footer id="footer">
-    <p><i class="far fa-copyright"></i> Copyright 2019 coin</p>
-  </footer>
-
-</body>
-</html>
+<footer id="footer">
+  <p><i class="far fa-copyright"></i> Copyright 2019 coin</p>
+</footer>
+<div id="income" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Your First Budget</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>What is your monthly income?</p>
+        <input id="incomeInput" type="number" class="form-control">
+      </div>
+      <div class="modal-footer">
+        <button id="nextSavings" type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="savings" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Your First Budget</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>How much do you spend on Savings?</p>
+        <input id="savingsInput" type="number" class="form-control">
+      </div>
+      <div class="modal-footer">
+        <button id="nextDebt" type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="debt" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Your First Budget</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>How much do you spend on Debt?</p>
+        <input id="debtInput" type="number" class="form-control">
+      </div>
+      <div class="modal-footer">
+        <button id="nextHousing" type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="housing" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Your First Budget</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>How much do you spend on Housing?</p>
+        <input id="housingInput" type="number" class="form-control">
+      </div>
+      <div class="modal-footer">
+        <button id="nextTransportation" type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="transportation" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Your First Budget</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>How much do you spend on Transportation?</p>
+        <input id="transportationInput" type="number" class="form-control">
+      </div>
+      <div class="modal-footer">
+        <button id="nextUtilities" type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="utilities" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Your First Budget</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>How much do you spend on Utilities?</p>
+        <input id="utilitiesInput" type="number" class="form-control">
+      </div>
+      <div class="modal-footer">
+        <button id="nextPhone" type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="phone" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Your First Budget</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>How much do you spend on Phone?</p>
+        <input id="phoneInput" type="number" class="form-control">
+      </div>
+      <div class="modal-footer">
+        <button id="nextSubscriptions" type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="subscriptions" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Your First Budget</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>How much do you spend on Subscriptions?</p>
+        <input id="subscriptionsInput" type="number" class="form-control">
+      </div>
+      <div class="modal-footer">
+        <button id="nextGroceries" type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="groceries" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Your First Budget</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>How much do you spend on Groceries?</p>
+        <input id="groceriesInput" type="number" class="form-control">
+      </div>
+      <div class="modal-footer">
+        <button id="nextEntertainment" type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="entertainment" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Your First Budget</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>How much do you spend on Entertainment?</p>
+        <input id="entertainmentInput" type="number" class="form-control">
+      </div>
+      <div class="modal-footer">
+        <button id="viewBudget" type="button" class="btn btn-secondary" data-dismiss="modal">View Budget</button>
+      </div>
+    </div>
+  </div>
+</div>
