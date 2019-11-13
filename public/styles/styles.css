@@ -1,3 +1,7 @@
+body {
+  min-height: 105vh;
+}
+
 .navbar {
   background-color: rgb(19, 19, 82);;
 
@@ -19,28 +23,21 @@
 
 }
 
-
-.jumbotron {
-  background-color: white;
-  width: 80%;
-  margin-top: 5%;
-  margin-left: 10%;
-  opacity: 0.9;
-  box-shadow: 10px 10px 5px black;
-}
-
-body {
-  background-image: url(./images/please.jpg);
-
-
-}
-
-#footer {
-  padding: 1% 15%;
-  text-align: center;
-  background-image: url(./images/.jpg);
+h1 {
   color: white;
-  background-color:rgb(19, 19, 82);
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+  background-color: rgb(19, 19, 82);
+  color: white;
+  text-align: center;
+}
 
+.mt-auto {
+  margin-top: auto!important;
+}

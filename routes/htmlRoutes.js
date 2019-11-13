@@ -3,12 +3,13 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.Budgets.findAll({}).then(function(dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        examples: dbExamples
-      });
-    });
+    // db.Budgets.findAll({}).then(function(dbExamples) {
+    //   res.render("homepage", {
+    //     msg: "Welcome!",
+    //     examples: dbExamples
+    //   });
+    res.render("home");
+    // });
   });
 
   // Render 404 page for any unmatched routes
