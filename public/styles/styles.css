@@ -33,14 +33,16 @@ h1 {
   box-shadow: 10px 10px 5px black;
 }
 
-
-#footer {
-  position: absolute;
+.footer {
+  position: fixed;
+  left: 0;
   bottom: 0;
-  padding: 1% 15%;
-  text-align: center;
+  width: 100%;
+  background-color: rgb(19, 19, 82);
   color: white;
-  background-color:rgb(19, 19, 82);
+  text-align: center;
 }
 
-
+.mt-auto {
+  margin-top: auto!important;
+}

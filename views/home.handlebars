@@ -9,14 +9,32 @@
   <div id="graphs">
     <canvas id="myChart"></canvas>
   </div>
-  <div id="expenses">
-    <div class="form-control">
-      <input type="text">
+  <div id="expenses" class="text-center">
+    <p>Add Expense</p>
+    <div class="form-group">
+      <label for="addExpense">Select Category</label>
+      <select class="form-control" id="selectCategory">
+        <option value="savings">Savings</option>
+        <option value="debt">Debt</option>
+        <option value="housing">Housing</option>
+        <option value="transportation">Transportation</option>
+        <option value="utilities">Utilities</option>
+        <option value="phone">Phone</option>
+        <option value="subscriptions">Subscriptions</option>
+        <option value="groceries">Groceries</option>
+        <option value="entertainment">Entertainment</option>
+      </select>
     </div>
+    <div class="form-group">
+      <label for="addExpense">
+        <input type="number" id="expenseAmount">
+      </label>
+    </div>
+    <button class="btn btn-default btn-primary" id="addExpense">Add Expense</button>
   </div>
 </div>
 
-<footer id="footer">
+<footer class="footer mt-auto py-3">
   <p><i class="far fa-copyright"></i> Copyright 2019 coin</p>
 </footer>
 <div id="income" class="modal" tabindex="-1" role="dialog">
