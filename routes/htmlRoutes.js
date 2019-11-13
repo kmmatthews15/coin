@@ -7,9 +7,11 @@ module.exports = function(app) {
     //   res.render("homepage", {
     //     msg: "Welcome!",
     //     examples: dbExamples
-    //   });
+    res.render("login");
+  });
+
+  app.get("/home", function(req, res) {
     res.render("home");
-    // });
   });
 
   // Render 404 page for any unmatched routes
