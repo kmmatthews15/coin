@@ -8,6 +8,10 @@ $(document).ready(function() {
   $("#income").modal("show");
 });
 
+$("addExpense").on("click", function() {
+  $("#expenseAmount").val();
+});
+
 $("#nextSavings").on("click", function() {
   $("#income").modal("hide");
   $("#savings").modal("show");

@@ -41,6 +41,19 @@ h1 {
   margin-top: auto!important;
 } */
 
+#addExpense {
+  background-color: #0ccf00;
+}
+
+#expenseAmount {
+  width: 200px;
+}
+
+#selectCategory {
+  margin: 0 auto;
+  width: 200px;
+}
+
 #login{
   background-color: white;
   margin-top: 50px;
@@ -66,10 +79,11 @@ h1 {
   margin-bottom: 15px;
   box-sizing:border-box;
 }
+
 #loginButton {
+  background-color: rgb(19, 19, 82);
   width: 100%;
   padding: 15px;
-  background-color: #535b63;
   border: 0;
   box-sizing: border-box;
   cursor: pointer;
