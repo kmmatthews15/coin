@@ -10,7 +10,7 @@ at coin we've allowed for an easier, streamlined application. After filling in t
 we can generate a graph to visualize what needs to be saved and what can be spent.
 
 ## technologies used
-*Node and Express
-*MySQL
-*AnyGraph Library
-*Bootstrap
+* Node and Express 
+* MySQL 
+* AnyGraph Library 
+* Bootstrap
