@@ -9,8 +9,15 @@ Adulting is hard and budgeting apps are even harder. For us to effectively allow
 at coin we've allowed for an easier, streamlined application. After filling in the prompts, 
 we can generate a graph to visualize what needs to be saved and what can be spent.
 
+## individual contributions 
+* Keisha Matthews: Project Manager, Back-End
+* Brianna Psanos: Front-End
+* Catherine Swihart: Front-End
+* David Tardy: Back-End
+
 ## technologies used
 * Node and Express 
 * MySQL 
 * AnyGraph Library 
 * Bootstrap
+
