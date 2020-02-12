@@ -171,6 +171,32 @@ $("#viewBudget").on("click", function() {
   $.post("/api/budgets", newBudget).then(displayGraph());
 });
 
+function displayReceipt() {
+  $.get("api/receipt", function(data) {
+    var type = [];
+    var category = [];
+    var description = [];
+    var value = [];
+    
+    for (var i=0; i < data.length; i++) {
+      type.push(data[i].type);
+      category.push(data[i].category);
+      description.push(data[i].description);
+      value.push(data[i].value);
+
+      
+    }
+
+    console.log(data)
+  })
+
+  $(".form-group").on("submit", function(event) {
+    // Make sure to preventDefault on a submit event.
+    event.preventDefault();
+  })
+};
+
+
 function displayGraph() {
   $.get("api/budgets", function(data) {
     var labels = [];

@@ -1,38 +1,122 @@
-<nav class="navbar navbar-expand-lg navbar">
-  <h1>coin</h1>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<link rel="stylesheet" href="/stylesheets/ionicons.css">
+{{!-- NAV --}}
+<nav class="navbar navbar-expand-lg navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 172 172"
+        style=" fill:#000000;">
+        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+          stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+          font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+          <path d="M0,172v-172h172v172z" fill="none"></path>
+          <g fill="#ffffff">
+            <path
+              d="M86,24.08c-1.33094,-0.00001 -2.66192,0.31919 -3.87336,0.95742l-60.56953,31.92078c-0.54376,0.28681 -0.89318,0.84194 -0.91664,1.45625c-0.02345,0.61431 0.28263,1.19447 0.80294,1.52189c0.52031,0.32743 1.17578,0.35238 1.71947,0.06545l4.35711,-2.29781v81.61602c0,4.72917 3.87083,8.6 8.6,8.6h99.76c4.72917,0 8.6,-3.87083 8.6,-8.6v-81.61602l4.35711,2.29781c0.54369,0.28693 1.19917,0.26198 1.71947,-0.06545c0.52031,-0.32743 0.82639,-0.90758 0.80294,-1.52189c-0.02345,-0.61431 -0.37288,-1.16944 -0.91664,-1.45625l-60.56953,-31.92078c-1.21089,-0.63851 -2.54242,-0.95742 -3.87336,-0.95742zM86,27.52c0.77916,0.00007 1.55722,0.18644 2.26758,0.56102l52.77242,27.81227v83.42672c0,2.86979 -2.29021,5.16 -5.16,5.16h-99.76c-2.86979,0 -5.16,-2.29021 -5.16,-5.16v-83.42672l52.76906,-27.81227c0.71151,-0.37485 1.49177,-0.56108 2.27094,-0.56102zM86,36.11664c-1.79091,0 -3.58285,0.43031 -5.21375,1.29l-36.06289,19.00734c-4.23348,2.23096 -6.88336,6.6259 -6.88336,11.4118v60.31422c0,5.21386 4.24614,9.46 9.46,9.46h77.4c5.21386,0 9.46,-4.24614 9.46,-9.46v-30.96c0.00439,-0.31015 -0.15856,-0.59863 -0.42645,-0.75498c-0.26789,-0.15635 -0.59921,-0.15635 -0.8671,0c-0.26789,0.15635 -0.43084,0.44484 -0.42645,0.75498v30.96c0,4.28398 -3.45602,7.74 -7.74,7.74h-77.4c-4.28398,0 -7.74,-3.45602 -7.74,-7.74v-60.31422c0,-4.15122 2.29461,-7.95512 5.96625,-9.89l36.06289,-19.00735c2.76164,-1.45573 6.06008,-1.45574 8.82172,0l8.08938,4.26305c0.27312,0.15635 0.60982,0.15106 0.87788,-0.01381c0.26806,-0.16486 0.42469,-0.46297 0.40836,-0.77725c-0.01633,-0.31428 -0.203,-0.59455 -0.48671,-0.73074l-8.08937,-4.26305c-1.6309,-0.85969 -3.41948,-1.29 -5.21039,-1.29zM104.04992,44.28664c-0.39714,0.0008 -0.7421,0.27342 -0.83466,0.65962c-0.09256,0.38621 0.09134,0.78557 0.44497,0.96631l3.44,1.81406c0.27312,0.15635 0.60982,0.15106 0.87788,-0.01381c0.26806,-0.16486 0.42469,-0.46297 0.40836,-0.77725c-0.01633,-0.31428 -0.203,-0.59455 -0.48671,-0.73074l-3.44,-1.81406c-0.12582,-0.06828 -0.26669,-0.10408 -0.40984,-0.10414zM110.92992,47.91141c-0.39714,0.0008 -0.7421,0.27342 -0.83466,0.65962c-0.09256,0.38621 0.09134,0.78557 0.44497,0.96631l1.72,0.90703c0.27312,0.15635 0.60982,0.15106 0.87788,-0.01381c0.26806,-0.16486 0.42469,-0.46297 0.40836,-0.77725c-0.01633,-0.31428 -0.203,-0.59455 -0.48671,-0.73074l-1.72,-0.90703c-0.12582,-0.06828 -0.26669,-0.10408 -0.40984,-0.10414zM87.01117,63.64c-0.52976,0 -0.97419,0.15235 -1.33367,0.46023c-0.3612,0.30788 -0.54086,0.65293 -0.54086,1.03133v2.1332c-1.72688,0.14276 -3.33798,0.45862 -4.82406,0.95742c-1.48952,0.49708 -2.89341,1.22244 -4.21265,2.17016c-1.32096,0.94944 -2.36382,2.241 -3.13094,3.87672c-0.76712,1.63916 -1.15227,3.52914 -1.15227,5.67398c0,1.763 0.28716,3.34491 0.86336,4.75015c0.5762,1.40696 1.21153,2.52518 1.90813,3.35938c0.6966,0.83248 1.75061,1.65566 3.16789,2.46578c1.41384,0.8084 2.57879,1.3796 3.49039,1.71328l3.89016,1.42773v19.01406c-1.89028,-0.09632 -3.58789,-0.44293 -5.08945,-1.03805c-1.50328,-0.59512 -2.59575,-1.23684 -3.28547,-1.92828c-0.688,-0.69144 -1.36514,-1.32193 -2.02906,-1.89469c-0.66392,-0.57276 -1.18707,-0.86 -1.56547,-0.86c-0.66908,0 -1.27546,0.35948 -1.82414,1.075c-0.54868,0.71552 -0.82305,1.45187 -0.82305,2.21383c0,1.66152 1.4039,3.37201 4.21266,5.12641c2.80876,1.7544 6.27426,2.65622 10.40398,2.70094v2.47586c0,0.39904 0.17966,0.76164 0.54086,1.08844c0.35948,0.32508 0.80563,0.48711 1.33367,0.48711c0.47816,0 0.9098,-0.16039 1.29336,-0.48375c0.38356,-0.32336 0.57781,-0.68776 0.57781,-1.08508v-2.69086c3.86484,-0.51772 6.93101,-1.96803 9.19797,-4.35711c2.26696,-2.3908 3.39969,-5.64458 3.39969,-9.7657c0,-2.33404 -0.34497,-4.37178 -1.03469,-6.1107c-0.69144,-1.73892 -1.71667,-3.16684 -3.07719,-4.28656c-1.36224,-1.118 -2.6506,-2.00055 -3.86664,-2.64383c-1.21776,-0.64328 -2.75474,-1.29787 -4.61578,-1.96523v-16.27953c2.06228,0.0946 3.97973,0.55838 5.74789,1.38742c1.76644,0.82904 2.77092,1.23961 3.01,1.23961c0.774,0 1.40293,-0.37695 1.88797,-1.13547c0.48332,-0.7568 0.72562,-1.46592 0.72562,-2.12984c0,-1.32612 -1.17782,-2.40604 -3.52734,-3.23508c-2.35296,-0.82732 -4.96822,-1.31521 -7.8475,-1.45797v-1.98875c0,-0.3784 -0.19089,-0.72345 -0.57445,-1.03133c-0.38528,-0.30788 -0.81684,-0.46023 -1.29672,-0.46023zM85.42219,72.5457v14.96938c-2.66256,-0.95288 -4.64897,-1.99106 -5.95617,-3.11078c-1.30892,-1.118 -1.96187,-2.79626 -1.96187,-5.0357c0,-4.02652 2.63765,-6.30001 7.91805,-6.82289zM88.5968,95.01656c2.3048,0.95288 4.07589,2.12267 5.32461,3.50383c1.247,1.38288 1.87117,3.31304 1.87117,5.79156c0,4.71452 -2.40034,7.45679 -7.19914,8.21703z">
+            </path>
+          </g>
+        </g>
+      </svg>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">
+            <div class="icons8-home"></div> Home<span class="sr-only">(current)</span>
+          </a>
+        </li>
+        {{!-- LOGIN / LOGOUT --}}
+        <li class="nav-item">
+          <a class="nav-link" href="/"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+              viewBox="0 0 172 172" style=" fill:#000000;">
+              <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#ffffff">
+                  <path
+                    d="M85.8925,6.7725c-23.3781,0 -44.43061,10.21499 -58.89656,26.37109c-1.72575,1.81717 -2.32705,4.42892 -1.56965,6.81778c0.7574,2.38886 2.7537,4.17703 5.21122,4.66788c2.45752,0.49085 4.98757,-0.39323 6.60452,-2.30785c11.97388,-13.37286 29.26937,-21.7889 48.65047,-21.7889c36.17891,0 65.36,29.18109 65.36,65.36c0,36.17891 -29.18109,65.36 -65.36,65.36c-19.37733,0 -36.67279,-8.41528 -48.65047,-21.7889c-1.61696,-1.91463 -4.14701,-2.79872 -6.60453,-2.30787c-2.45752,0.49085 -4.45383,2.27902 -5.21122,4.66789c-0.7574,2.38887 -0.15609,5.00062 1.56966,6.81779c14.46904,16.15534 35.52158,26.3711 58.89656,26.3711c43.61533,0 79.12,-35.50467 79.12,-79.12c0,-43.61533 -35.50467,-79.12 -79.12,-79.12zM37.81313,54.86531c-1.78742,0.05326 -3.48388,0.80028 -4.73,2.08281l-23.46859,23.46859c-1.71744,1.30466 -2.72377,3.33912 -2.71849,5.49591c0.00528,2.15678 1.02155,4.1863 2.74536,5.48253l23.44172,23.44172c1.72562,1.79732 4.28807,2.52133 6.69911,1.89279c2.41103,-0.62854 4.2939,-2.5114 4.92243,-4.92243c0.62854,-2.41103 -0.09547,-4.97349 -1.89279,-6.69911l-12.33562,-12.33563h62.51125c2.48118,0.03509 4.78904,-1.2685 6.03987,-3.41161c1.25083,-2.1431 1.25083,-4.79369 0,-6.93679c-1.25083,-2.1431 -3.55869,-3.4467 -6.03987,-3.41161h-62.51125l12.33562,-12.33563c2.03483,-1.97794 2.64666,-5.00221 1.54067,-7.61556c-1.10599,-2.61334 -3.7029,-4.27965 -6.53941,-4.196z">
+                  </path>
+                </g>
+              </g>
+            </svg> Logout</a>
+        </li>
+        {{!-- CONTACT / INFO --}}
+      </ul>
+    </div>
+  </div>
 </nav>
 
 <div class="container" id="budgets">
   <div id="graphs">
     <canvas id="myChart"></canvas>
   </div>
-  <div id="expenses" class="text-center">
-    <p>Add Expense</p>
-    <div class="form-group">
-      <label for="addExpense">Select Category</label>
-      <select class="form-control" id="selectCategory">
-        <option value="savings">Savings</option>
-        <option value="debt">Debt</option>
-        <option value="housing">Housing</option>
-        <option value="transportation">Transportation</option>
-        <option value="utilities">Utilities</option>
-        <option value="phone">Phone</option>
-        <option value="subscriptions">Subscriptions</option>
-        <option value="groceries">Groceries</option>
-        <option value="entertainment">Entertainment</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="addExpense">
-        <input type="number" id="expenseAmount">
-      </label>
-    </div>
-    <button class="btn btn-default btn-primary" id="addExpense">Add Expense</button>
-  </div>
 </div>
+
+<section class="add_receipt text-center">
+  <span class="receipt_title">Add Receipt</span>
+  <hr>
+  <div class="form-group">
+    <select class="add_type" name="type" required>
+      <option value="" selected disabled hidden>Type</option>
+      <option value="inc">Income</option>
+      <option value="exp">Expense</option>
+    </select>
+    <select class="add_category" name="category" required>
+      <option value="" selected disabled hidden>Category</option>
+      <optgroup label="Expenses">
+        <option value="transport">Transport</option>
+        <option value="groceries">Groceries</option>
+        <option value="eating_out">Eating Out</option>
+        <option value="bills">Bills</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="holidays">Holidays</option>
+        <option value="shopping">Shopping</option>
+        <option value="savings">Savings</option>
+        <option value="expenses">Expenses</option>
+        <option value="general">General</option>
+      </optgroup>
+      <optgroup label="Income">
+        <option value="wages">Wages</option>
+        <option value="refund">Refund</option>
+        <option value="cashback">Cash Back</option>
+        <option value="gift">Gift</option>
+        <option value="general">General</option>
+      </optgroup>
+    </select>
+    <input type="text" class="add_description" name="description" placeholder="Description" required>
+    <input type="number" class="add_value" name="value" placeholder="Value" min="0.01" step="0.01" required>
+    <button type="submit" class="add_btn">Add</button>
+  </div>
+  <div class="row">
+      <div class="col-md-12 receipt-container">
+</div>
+</section>
+
+
+<div class="circle"></div>
+<div class="tips">
+  <h1 class="tips2">
+    BUDGETING TIPS
+  </h1>
+</div>
+
+<h2 class="tips3" id="decide">Decide why you're budgeting</h2>
+<p class="tips3" id="start">Start by articulating what’s inspiring you to create a budget</p>
+<h2 class="tips3" id="method">Select your budget method</h2>
+<p class="tips3" id="options">There are many options out there! Check and read up on the different ways to budget and 
+    choose the one that's best for you!
+  </p>
+<h2 class="tips3" id="prioritize">Prioritize expenses and goals</h2>
+<p class="tips3" id="essentials">Understand the difference between needs and wants, then focus 
+    on the essentials first!
+  </p
+
 
 <footer class="footer mt-auto py-3">
   <p><i class="far fa-copyright"></i> Copyright 2019 coin</p>
@@ -227,3 +311,5 @@
     </div>
   </div>
 </div>
+
+ <script src="../public/js/app.js" type="text/javascript"></script>
