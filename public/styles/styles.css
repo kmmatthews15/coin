@@ -52,6 +52,10 @@ body {
   background-color: transparent;
 }
 
+.footer {
+  height: 50px;
+}
+
 h1,
 #myChart {
   color: white;
